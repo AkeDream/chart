@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f5f5f5"
+    android:gravity="center_horizontal"
+    >
+
+    <com.wifieye.akechartdemo.scale.CloudScaleView
+        android:id="@+id/cloud_scale_view"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"/>
+
+    <com.wifieye.akechartdemo.scale.InstrumentView
+        android:id="@+id/instrumentView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        />
+
+
+
+    <com.wifieye.akechartdemo.scale.PointerScaleView
+        android:id="@+id/test_scale_view"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="50dp"/>
+
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="20dp"
+        android:id="@+id/sb"/>
+
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:onClick="btnClick"
+        android:text="转圈圈"/>
+
+</LinearLayout>
+

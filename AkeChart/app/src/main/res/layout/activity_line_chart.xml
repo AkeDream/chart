@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context=".otherchart.LineChartActivity">
+
+    <com.wifieye.akechartdemo.otherchart.BrokenLineView2
+        android:id="@+id/customView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="#272727" />
+    <com.wifieye.akechartdemo.otherchart.BarChartView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:visibility="gone"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="300dp"/>
+
+    <TextureView
+        android:id="@+id/textureView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <com.wifieye.akechartdemo.line.ParentFrameLayout
+        android:layout_width="280dp"
+        android:layout_height="300dp"
+        android:layout_margin="40dp"
+        android:visibility="gone"
+        >
+
+        <com.wifieye.akechartdemo.line.DiffContainerWaihuiTianyan
+            android:id="@+id/diff_container"
+            android:layout_width="260dp"
+            android:layout_height="200dp"
+            />
+
+    </com.wifieye.akechartdemo.line.ParentFrameLayout>
+
+
+    <com.wifieye.akechartdemo.lineme.MultContentLayout
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/multContentLayout"
+        android:layout_width="260dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="40dp"
+        android:visibility="gone"
+        />
+
+
+    <com.wifieye.akechartdemo.lineme.CloudBrokenView
+        android:id="@+id/cloud_broken_view"
+        android:layout_width="360dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <com.wifieye.akechartdemo.lineme.CloudBarView
+        android:id="@+id/cloud_bar_view"
+        android:layout_width="360dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>

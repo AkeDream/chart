@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".animatortest.AnimatorTestActivity">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="90dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="92dp"
+        android:gravity="center"
+        android:onClick="btnClick"
+        android:text="hello world"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="69dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="36dp"
+        android:background="#999999"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:onClick="btnClick"
+        android:text="startAnim"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.wifieye.akechartdemo.animatortest.MyTextView
+        android:id="@+id/textView9"
+        android:layout_width="82dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="A"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <com.wifieye.akechartdemo.animatortest.NumberChangeTextView
+        android:id="@+id/textView10"
+        android:layout_width="233dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="#ffffff"
+        android:paddingEnd="20dp"
+        android:paddingBottom="30dp">
+
+
+        <ImageView
+            android:id="@+id/menu"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:onClick="btnClick"
+            android:layout_gravity="end|bottom"
+            android:src="@drawable/other_explosure"/>
+
+        <ImageView
+            android:id="@+id/item1"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="btnClick"
+            android:layout_gravity="end|bottom"
+            android:visibility="gone"
+            android:src="@drawable/qq_logo"/>
+
+        <ImageView
+            android:id="@+id/item2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="btnClick"
+            android:visibility="gone"
+            android:layout_gravity="end|bottom"
+            android:src="@drawable/qq_zone"/>
+
+
+        <ImageView
+            android:id="@+id/item3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:onClick="btnClick"
+            android:visibility="gone"
+            android:layout_gravity="end|bottom"
+            android:src="@drawable/weibo_logo"/>
+
+
+        <ImageView
+            android:id="@+id/item4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:visibility="gone"
+            android:onClick="btnClick"
+            android:layout_gravity="end|bottom"
+            android:src="@drawable/weixin_logo"/>
+
+
+        <ImageView
+            android:id="@+id/item5"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:visibility="gone"
+            android:onClick="btnClick"
+            android:layout_gravity="end|bottom"
+            android:src="@drawable/weixin_share"/>
+
+
+
+
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

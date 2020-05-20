@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/frame_layout"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/ic_launcher"
+        />
+
+    <com.wifieye.akechartdemo.line.CustomLayout
+        android:layout_width="match_parent"
+        android:id="@+id/layout"
+        android:background="#8c565658"
+        android:layout_height="match_parent">
+
+        <!-- 根据这个子View所在的位置，计算出透明矩形的位置 -->
+        <FrameLayout
+            android:id="@+id/iv_scan"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            />
+
+    </com.wifieye.akechartdemo.line.CustomLayout>
+</FrameLayout>

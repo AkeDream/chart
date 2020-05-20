@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="StripeProgressBar">
+        <!--进度条圆角-->
+        <attr name="progress_radius" format="dimension" />
+        <!--进度条背景颜色-->
+        <attr name="progress_background" format="color" />
+        <!--进度条图片-->
+        <attr name="progress_image" format="reference" />
+        <!--进度条最大进度-->
+        <attr name="progress_max" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="LineProgressItemView">
+
+          <!--进度条背景颜色-->
+        <attr name="item_background" format="color"/>
+          <!--条目第一种颜色-->
+        <attr name="item_color_deep" format="color"/>
+          <!-- 条目第二种颜色-->
+        <attr name="item_color_tint" format="color"/>
+
+    </declare-styleable>
+
+</resources>
